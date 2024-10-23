@@ -8,13 +8,10 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  base: process.env.NODE_ENV === 'production' ? '/pf/' : '/',
+  base: '/pf/',  // GitHub Pages 서브 디렉토리 경로
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  define: {
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }
 });
