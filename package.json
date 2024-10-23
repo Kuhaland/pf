@@ -19,5 +19,6 @@
     "eslint-plugin-vue": "^9.23.0",
     "gh-pages": "^6.1.1",
     "vite": "^5.4.8"
-  }
+  },
+  "homepage": "https://github.com/Kuhaland/kuhaland.github.io"
 }

@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  base: '/kuhaland.github.io/pf/',
+  base: '/pf/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
