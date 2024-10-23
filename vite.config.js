@@ -10,10 +10,10 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  base: '/pf/',
+  base: import.meta.env.MODE === 'production' ? '/pf/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
+  }
 });
